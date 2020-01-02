@@ -1,0 +1,1 @@
+{"jobID":"b191e41d-4d62-f99b-083c-368888f6f63d","spec":{"type":"policy","cause":{"Message":"","User":"Olivier Delannoy \u003codelanno@synamedia.com\u003e"},"spec":{"default:deployment/podinfo":{"add":{"automated":"true"},"remove":{}}}},"result":null}
