@@ -4,11 +4,14 @@ kind: Deployment
 metadata:
   name: podinfo
 spec:
-  replicas: 10
+  replicas: 4
   template:
     metadata:
       labels:
         app: podinfo
+      annotations:
+        flux.weave.works/tag.podinfo: glob:*
+	flux.weave.works/automated: 'true'
     spec:
       containers:
       - name: podinfo
