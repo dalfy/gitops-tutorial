@@ -11,7 +11,7 @@ spec:
         app: podinfo
       annotations:
         flux.weave.works/tag.podinfo: glob:*
-	flux.weave.works/automated: 'true'
+        flux.weave.works/automated: 'true'
     spec:
       containers:
       - name: podinfo
