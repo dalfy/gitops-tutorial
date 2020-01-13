@@ -5,7 +5,6 @@ metadata:
   name: podinfo
   annotations:
     fluxcd.io/automated: 'true'
-    configmap.reloader.stakater.com/reload: "example-config"
 spec:
   replicas: 4
   template:
@@ -15,6 +14,7 @@ spec:
       annotations:
         flux.weave.works/tag.podinfo: glob:*
         flux.weave.works/automated: 'true'
+        configmap.reloader.stakater.com/reload: "example-config"
     spec:
       containers:
       - name: podinfo
