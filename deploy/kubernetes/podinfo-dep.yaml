@@ -5,6 +5,7 @@ metadata:
   name: podinfo
   annotations:
     fluxcd.io/automated: 'true'
+    configmap.reloader.stakater.com/reload: "example-config"
 spec:
   replicas: 4
   template:
